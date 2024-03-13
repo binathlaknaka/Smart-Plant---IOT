@@ -1,0 +1,120 @@
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header,
+  main,
+  footer {
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation bar */
+  .nav-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .nav-logo {
+    flex: 0 0 auto; /* Fix logo width */
+  }
+  
+  .nav-menu {
+    flex: 1; /* Allow menu to fill remaining space */
+    text-align: right; /* Align menu items to the right */
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-menu a:hover {
+    color: #ddd;
+  }
+  
+  /* Content Sections */
+  .system-status,
+  .plant-data,
+  .plant-table {
+    background-color: #e0f2f1;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+  }
+  
+  /* Plant Data Form */
+  .plant-data form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 0.5rem; /* Add some space between form elements */
+  }
+  
+  .plant-data-form label {
+    width: 120px;
+    margin-right: 0.5rem;
+  }
+  
+  /* Plant Table */
+  .plant-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .plant-table tr:nth-child(odd) {
+    background-color: #f5f5f5; /* Lighter background color for odd rows */
+  }
+  
+  .plant-table th,
+  .plant-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .social-links,
+  .legal-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-links img,
+  .legal-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
