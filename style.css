@@ -8,7 +8,10 @@ body {
 
   main,
   footer {
-    padding: 6.25rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+    padding-top: 3rem;
+    background-color: #004231;
   }
   
   h2 {
@@ -21,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    height: 70px;
+    height: 60px;
     width: auto;
     position: relative;
     background-color: #ebffe5;
@@ -33,8 +36,6 @@ body {
     width: 50px;
     height: auto;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   
   .nav-menu {
@@ -68,6 +69,22 @@ body {
     color: #004231;
   }
   
+.hero-section{
+    background-color: #ffffff;
+    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    height: 500px;
+    padding-top: 70px;
+}
+.hero-sec-items{
+    align-items: center;;
+    justify-content: space-between;
+    padding-left: 330px;
+
+}
+
   /* Content Sections */
   .system-status,
   .plant-data,
