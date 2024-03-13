@@ -3,12 +3,12 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
   
-  header,
+
   main,
   footer {
-    padding: 2rem;
+    padding: 6.25rem;
   }
   
   h2 {
@@ -21,15 +21,28 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    height: 70px;
+    width: auto;
+    position: relative;
+    background-color: #ebffe5;
   }
   
   .nav-logo {
     flex: 0 0 auto; /* Fix logo width */
+    padding-left: 150px;
+    width: 50px;
+    height: auto;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
   .nav-menu {
     flex: 1; /* Allow menu to fill remaining space */
     text-align: right; /* Align menu items to the right */
+    padding-right: 170px;
+    justify-content: space-between;
+    
   }
   
   .nav-menu ul {
@@ -40,16 +53,19 @@ body {
   
   .nav-menu li {
     display: inline-block;
-    margin-left: 1rem;
+    margin-left: 5rem;
   }
   
   .nav-menu a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
   }
   
   .nav-menu a:hover {
-    color: #ddd;
+    color: #004231;
   }
   
   /* Content Sections */
