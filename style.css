@@ -16,6 +16,9 @@ body {
   
   h2 {
     margin-bottom: 1rem;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   
   /* Navigation bar */
@@ -84,9 +87,15 @@ body {
     padding-left: 330px;
 
 }
+/* .data{
+  justify-content: space-between;
 
+} */
+.status{
+  padding: 20px;
+  margin: 1rem;
+}
   /* Content Sections */
-  .system-status,
   .plant-data,
   .plant-table {
     background-color: #e0f2f1;
@@ -94,8 +103,33 @@ body {
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
   }
+
+.system-status1{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    width: 45%;
+    border: 1px solid #ddd;
+    float: left;
+}
+.system-status2{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  width: 45%;
+  border: 1px solid #ddd;
+  float: right;
+}
+
   
   /* Plant Data Form */
   .plant-data form {

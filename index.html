@@ -22,57 +22,63 @@
   </header>
 
   <main>
-
     <div class="hero-section">
         <div class="hero-sec-items">
             <img src="images/Group 6.png" alt="hero-sec-items">
         </div>
     </div>
 
-    <div class="system-status">
+    <div class="data">
       <h2>System Status</h2>
-      <p>System: <span id="system-status">On</span></p>
-      <p>Watering: <span id="watering-status">Off</span></p>
-    </div>
-
-    <div class="plant-data">
+      <div class="status">
+          <div class="system-status1">
+              <p>System: <span id="system-status">On</span></p>
+            </div>
+            <div class="system-status2">
+              <p>Watering: <span id="watering-status">Off</span></p>
+            </div>
+      </div>
+    
       <h2>Plant Data</h2>
-      <form id="plant-data-form">
-        <label for="plant-number">Plant Number:</label>
-        <input type="text" id="plant-number" name="plant-number" required>
+      <div class="plant-data">
+        <form id="plant-data-form">
+          <label for="plant-number">Plant Number:</label>
+          <input type="text" id="plant-number" name="plant-number" required>
 
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
 
-        <div class="plant-data-readings">
-          <p>Temperature: <span id="temperature">25</span> °C</p>
-          <p>Humidity: <span id="humidity">75</span>%</p>
-          <p>Soil Moisture: <span id="soil-moisture">68</span>%</p>
-          <p>Light: <span id="light">51</span>%</p>
-        </div>
-        <button type="submit">SUBMIT</button>
-      </form>
+          <div class="plant-data-readings">
+            <p>Temperature: <span id="temperature">25</span> °C</p>
+            <p>Humidity: <span id="humidity">75</span>%</p>
+            <p>Soil Moisture: <span id="soil-moisture">68</span>%</p>
+            <p>Light: <span id="light">51</span>%</p>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <div class="plant-table">
+        <h2>Plant Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Plant no</th>
+              <th>Date</th>
+              <th>Temperature</th>
+              <th>Humidity</th>
+              <th>Moisture</th>
+              <th>Light</th>
+              <th>PH</th>
+              <th>Health</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
     </div>
-
-    <div class="plant-table">
-      <h2>Plant Table</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Plant no</th>
-            <th>Date</th>
-            <th>Temperature</th>
-            <th>Humidity</th>
-            <th>Moisture</th>
-            <th>Light</th>
-            <th>PH</th>
-            <th>Health</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-    </div>
+    
   </main>
 
   <footer>
