@@ -163,6 +163,7 @@ body {
     border-radius: 15px; /* Add rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 1rem;
+    padding-bottom: 20px;
   }
   .plant-data form {
     display: flex;
@@ -170,13 +171,20 @@ body {
     gap: 0.5rem; /* Add some space between form elements */
   }
   
-  label {
+  .label-name {
     width: 120px;
     margin-right: 0.5rem;
     font-size: 20px;
     padding-right: 50px;
     padding-top: 5px;
   }
+.label-date{
+  width: 120px;
+  margin-right: 0.5rem;
+  font-size: 20px;
+  padding-right: 130px;
+  padding-top: 5px;
+}
 
 /* Input container */
 .input-container1 {
@@ -203,6 +211,25 @@ body {
 }
 
 .input:focus {
+  border-bottom: 2px solid #004231;
+  -webkit-transition: 0.1s;
+  transition: 0.5s;
+}
+
+/* Plant date input */
+.date {
+  font-weight: 500;
+  font-size: 16px;
+  height: 40px;
+  width: 45%;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid #d3d3d3;
+  outline: none;
+}
+
+.date:focus {
   border-bottom: 2px solid #004231;
   -webkit-transition: 0.1s;
   transition: 0.5s;
