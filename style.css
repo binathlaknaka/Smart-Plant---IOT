@@ -1,12 +1,9 @@
-
 /* Basic styles */
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
-
-
   main,
   footer {
     padding-left: 6.25rem;
@@ -21,7 +18,10 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  
+
+
+
+
   /* Navigation bar */
   .nav-container {
     display: flex; /* Use flexbox for layout */
@@ -73,6 +73,8 @@ body {
     color: #004231;
   }
   
+
+  /* Hero Section */
 .hero-section{
     background-color: #ffffff;
     padding: 0 1rem 1rem 1rem;
@@ -96,16 +98,10 @@ body {
   padding: 0;
   margin: 0;
 }
+
+
+
   /* Content Sections */
-  .plant-data{
-    background-color: #e0f2f1;
-    border: 1px solid #ddd;
-    padding: 10rem;
-    margin-bottom: 1rem;
-    border-radius: 15px; /* Add rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
-  }
 
 .system-status1{
     background-color: #ffffff;
@@ -155,21 +151,69 @@ body {
   margin: 0;
 }
 
+
+
+
   /* Plant Data Form */
+  .plant-data{
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
   .plant-data form {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     gap: 0.5rem; /* Add some space between form elements */
   }
   
-  .plant-data-form label {
+  label {
     width: 120px;
     margin-right: 0.5rem;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-top: 5px;
   }
-  
-  /* Plant Table */
+
+/* Input container */
+.input-container1 {
+  position: relative;
+  margin: 20px;
+}
+.input-container2 {
+  position: relative;
+  margin: 20px;
+}
+
+/* Plant number input */
+
+.input {
+  font-weight: 500;
+  font-size: 16px;
+  height: 40px;
+  width: 45%;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid #d3d3d3;
+  outline: none;
+}
+
+.input:focus {
+  border-bottom: 2px solid #004231;
+  -webkit-transition: 0.1s;
+  transition: 0.5s;
+}
+
+
 
   
+
+
+  /* Plant Table */
   .plant-table table {
     width: 100%;
     border-collapse: collapse;
@@ -182,13 +226,19 @@ body {
     background-color: #cacaca; /* Lighter background color for odd rows */
   }
   
-  .plant-table th{
+  .plant-table thead{
     position: sticky;
+    padding-top: 20px;
+    z-index: 1;
+    top: 0;
+  }
+  th{
     padding-top: 15px;
+    padding-bottom: 10px;
   }
   .plant-table{
     overflow-y: auto;
-    height: 430px;
+    height: 435px;
     border-radius: 20px;
 
   }
@@ -213,14 +263,10 @@ body {
     border-radius: 8px;
     background-color: #656565;
   }
-  /* .plant-table th,
-  .plant-table td {
-    border: 1px solid #ddd;
-    padding: 0.5rem;
-    text-align: left;
-  } */
 
-  
+
+
+
   /* Footer */
   footer {
     display: flex;

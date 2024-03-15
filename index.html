@@ -43,11 +43,18 @@
       <h2>Plant Data</h2>
       <div class="plant-data">
         <form id="plant-data-form">
-          <label for="plant-number">Plant Number:</label>
-          <input type="text" id="plant-number" name="plant-number" required>
-
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" required>
+          <div class="input-container1">
+            <label for="input">Plant Number:</label>
+            <input placeholder="Enter here" class="input" name="input" type="text" required/>
+          </div>
+          
+          <div class="input-container2">
+            <label for="date">Date:</label>
+            <input class="date" name="date" type="date" required/>
+          </div>
+          
+          <!-- <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required> -->
 
           <div class="plant-data-readings">
             <p>Temperature: <span id="temperature">25</span> °C</p>
