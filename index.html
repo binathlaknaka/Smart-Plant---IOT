@@ -1,240 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Plant</title>
-  <link rel="stylesheet" href="style.css"> </head>
-<body>
-  <header>
-    <div class="nav-container">
-      <div class="nav-logo">
-        <img src="images/Group 5.png" alt="Smart Plant logo">
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#">Status</a></li>
-          <li><a href="#">Plant data</a></li>
-          <li><a href="#">Plant table</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="hero-section">
-        <div class="hero-sec-items">
-            <img src="images/Group 6.png" alt="hero-sec-items">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Plant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="images/Group 5.png" alt="Smart Plant logo" />
         </div>
-    </div>
-
-    <div class="data">
-      <h2>System Status</h2>
-      <div class="status">
-          <div class="system-status1">
-              <p class="topic">System: </p><p><span id="system-status">On</span></p>
-            </div>
-            <div class="system-status2">
-              <p class="topic">Watering: </p><p><span id="watering-status">Off</span></p>
-            </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Plant data</a></li>
+            <li><a href="#">Plant table</a></li>
+          </ul>
+        </nav>
       </div>
-    
-      <br><br><br><br><br><br>
-      <h2>Plant Data</h2>
-      <div class="plant-data">
-        <form id="plant-data-form">
-          <div class="input-container1">
-            <label class="label-name" for="input">Plant Number:</label>
-            <input placeholder="Enter here" class="input" name="input" type="text" required/>
-          </div>
+    </header>
 
-          <div class="input-container2">
-            <label class="label-date" for="date">Date:</label>
-            <input class="date" name="date" type="date" required/>
+    <main>
+      <div class="hero-section">
+        <div class="hero-sec-items">
+          <img src="images/Group 6.png" alt="hero-sec-items" />
+        </div>
+      </div>
+
+      <div class="data">
+        <h2>System Status</h2>
+        <div class="status">
+          <div class="system-status1">
+            <p class="topic">System:</p>
+            <p><span id="system-status">On</span></p>
           </div>
-          
-          <!-- <label for="date">Date:</label>
+          <div class="system-status2">
+            <p class="topic">Watering:</p>
+            <p><span id="watering-status">Off</span></p>
+          </div>
+        </div>
+
+        <br /><br /><br /><br /><br /><br />
+        <h2>Plant Data</h2>
+        <div class="plant-data">
+          <form id="plant-data-form">
+            <div class="input-container1">
+              <label class="label-name" for="input">Plant Number:</label>
+              <input
+                placeholder="Enter here"
+                class="input"
+                name="input"
+                type="text"
+                required
+              />
+            </div>
+
+            <div class="input-container2">
+              <label class="label-date" for="date">Date:</label>
+              <input class="date" name="date" type="date" required />
+            </div>
+
+            <!-- <label for="date">Date:</label>
           <input type="date" id="date" name="date" required> -->
 
-          <div class="plant-data-readings">
-            <div class="card-set">
-              <div class="card1">
-                <div class="card-details">
-                  <p class="text-title">Temperature <span class="symbol">°C</span></p>
-                  <p class="text-body">25</p>
+            <div class="plant-data-readings">
+              <div class="card-set">
+                <div class="card1">
+                  <div class="card-details">
+                    <p class="text-title">
+                      Temperature <span class="symbol">°C</span>
+                    </p>
+                    <p class="text-body">25</p>
+                  </div>
                 </div>
-              </div>
-  
-              <div class="card2">
-                <div class="card-details">
-                  <p class="text-title">Humidity <span class="symbol">%</span></p>
-                  <p class="text-body">25</p>
+
+                <div class="card2">
+                  <div class="card-details">
+                    <p class="text-title">
+                      Humidity <span class="symbol">%</span>
+                    </p>
+                    <p class="text-body">25</p>
+                  </div>
                 </div>
-              </div>
-  
-              <div class="card3">
-                <div class="card-details">
-                  <p class="text-title">Soil Moisture <span class="symbol">%</span></p>
-                  <p class="text-body">25</p>
+
+                <div class="card3">
+                  <div class="card-details">
+                    <p class="text-title">
+                      Soil Moisture <span class="symbol">%</span>
+                    </p>
+                    <p class="text-body">25</p>
+                  </div>
                 </div>
-              </div>
-  
-              <div class="card4">
-                <div class="card-details">
-                  <p class="text-title">luminosity <span class="symbol">%</span></p>
-                  <p class="text-body">25</p>
+
+                <div class="card4">
+                  <div class="card-details">
+                    <p class="text-title">
+                      luminosity <span class="symbol">%</span>
+                    </p>
+                    <p class="text-body">25</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <button>
-            <a href="#" class="btn2"><span class="spn2">SUBMIT</span></a>
-          </button>
-        </form>
-      </div>
+            <button>
+              <a href="#" class="btn2"><span class="spn2">SUBMIT</span></a>
+            </button>
+          </form>
+        </div>
 
-      <h2>Plant Table</h2>
-      <div class="plant-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Plant no</th>
-              <th>Date</th>
-              <th>Temperature</th>
-              <th>Humidity</th>
-              <th>Moisture</th>
-              <th>Light</th>
-              <th>PH</th>
-              <th>Health</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>12/12/2020</td>
-              <td>25</td>
-              <td>75</td>
-              <td>68</td>
-              <td>51</td>
-              <td>6.5</td>
-              <td>Good</td>
-            </tr>
-          </tbody>
-        </table>
+        <h2>Plant Table</h2>
+        <div class="plant-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Plant no</th>
+                <th>Date</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Moisture</th>
+                <th>Light</th>
+                <th>Health</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>12/12/2020</td>
+                <td>25</td>
+                <td>75</td>
+                <td>68</td>
+                <td>51</td>
+                <td>Good</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer>
+    <div class="footer-around">
+      <div class="social-links">
+        <a href="#">
+          <img src="../images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="#">
+          <img src="../images/twitter.png" alt="Twitter icon">
+        </a>
+        <a href="#">
+          <img src="../images/instagram.png" alt="Instagram icon">
+        </a>
+        <a href="#">
+          <img src="../images/linkedin.png" alt="LinkedIn icon">
+        </a>
+      </div>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
       </div>
     </div>
     
-  </main>
+  </footer> -->
 
-  <footer>
-    <div class="social-links">
-      <a href="#">
-        <img src="../images/facebook.png" alt="Facebook icon">
-      </a>
-      <a href="#">
-        <img src="../images/twitter.png" alt="Twitter icon">
-      </a>
-      <a href="#">
-        <img src="../images/instagram.png" alt="Instagram icon">
-      </a>
-      <a href="#">
-        <img src="../images/linkedin.png" alt="LinkedIn icon">
-      </a>
-    </div>
-    <div class="legal-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
-    </div>
-  </footer>
-</body>
+    <!-- <script src="script.js">
+      document.querySelector('#nav-item-1').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#section1').scrollIntoView({behavior: 'smooth'});
+      });
+
+      document.querySelector('#nav-item-2').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#section2').scrollIntoView({behavior: 'smooth'});
+      });
+    </script> -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+      import { getFirestore, collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyC_ulLk9GSl88QiVMMMOLvrVNXV1bK07RA",
+        authDomain: "smart-plant-monitoring-a7775.firebaseapp.com",
+        projectId: "smart-plant-monitoring-a7775",
+        storageBucket: "smart-plant-monitoring-a7775.appspot.com",
+        messagingSenderId: "65735284428",
+        appId: "1:65735284428:web:1c4078c86e0642a5891469",
+        measurementId: "G-70HDVQHZTE",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      // Get a reference to the Firestore service
+      const db = getFirestore();
+
+      // Create a query against the collection.
+      const q = collection(db, "FC:B4:67:F0:C6:D8");
+
+      // Listen for real-time updates
+      onSnapshot(q, (querySnapshot) => {
+        const docs = querySnapshot.docs.map(doc => doc.data());
+        const lastDoc = docs[docs.length - 1];
+
+        // Select the elements and update their text content
+        document.querySelector('.card1 .text-body').textContent = lastDoc.temperature;
+        document.querySelector('.card2 .text-body').textContent = lastDoc.humidity;
+        document.querySelector('.card3 .text-body').textContent = lastDoc.moisture;
+        document.querySelector('.card4 .text-body').textContent = parseFloat(lastDoc.lux).toFixed(2);
+      }, (error) => {
+        console.log("Error getting documents:", error);
+      });
+
+      // Get the form element
+      const form = document.getElementById('plant-data-form');
+
+      // Add an event listener for the form submit event
+      form.addEventListener('submit', (event) => {
+        // Prevent the form from being submitted normally
+        event.preventDefault();
+
+        // Get the form data
+        const formData = new FormData(form);
+
+        // Create a new document in another collection
+        addDoc(collection(db, "PlantTable"), {
+          plantNumber: formData.get('input'),
+          date: formData.get('date'),
+          temperature: document.querySelector('.card1 .text-body').textContent,
+          humidity: document.querySelector('.card2 .text-body').textContent,
+          soilMoisture: document.querySelector('.card3 .text-body').textContent,
+          luminosity: document.querySelector('.card4 .text-body').textContent,
+        }).then(() => {
+          console.log("Document successfully written!");
+        }).catch((error) => {
+          console.error("Error writing document: ", error);
+        });
+      });
+
+      // Create a query against the "PlantTable" collection.
+      const plantTableQuery = collection(db, "PlantTable");
+
+      // Listen for real-time updates
+      onSnapshot(plantTableQuery, (querySnapshot) => {
+        const tbody = document.querySelector('table tbody');
+        tbody.innerHTML = ''; // Clear the table body
+
+        // Loop through each document in the collection
+        querySnapshot.forEach((doc) => {
+          // Get the data from the document
+          const data = doc.data();
+
+          // Create a new table row
+          const tr = document.createElement('tr');
+
+          // Create a new table data for each field
+          const tdPlantNo = document.createElement('td');
+          tdPlantNo.textContent = data.plantNumber;
+          tr.appendChild(tdPlantNo);
+
+          const tdDate = document.createElement('td');
+          tdDate.textContent = data.date;
+          tr.appendChild(tdDate);
+
+          const tdTemperature = document.createElement('td');
+          tdTemperature.textContent = data.temperature;
+          tr.appendChild(tdTemperature);
+
+          const tdHumidity = document.createElement('td');
+          tdHumidity.textContent = data.humidity;
+          tr.appendChild(tdHumidity);
+
+          const tdSoilMoisture = document.createElement('td');
+          tdSoilMoisture.textContent = data.soilMoisture;
+          tr.appendChild(tdSoilMoisture);
+
+          const tdLuminosity = document.createElement('td');
+          tdLuminosity.textContent = data.luminosity;
+          tr.appendChild(tdLuminosity);
+
+          // Create a new table data for the health field
+          const tdHealth = document.createElement('td');
+          if (data.temperature < 25 || data.humidity < 50 || data.soilMoisture < 2000 || data.luminosity < 5) {
+            tdHealth.textContent = 'Bad';
+            tdHealth.className = 'bad';
+          } else {
+            tdHealth.textContent = 'Good';
+            tdHealth.className = 'good';
+          }
+          tr.appendChild(tdHealth);
+
+          // Append the table row to the table body
+          tbody.appendChild(tr);
+        });
+      }, (error) => {
+        console.log("Error getting documents:", error);
+      });
+    </script>
+  </body>
 </html>
